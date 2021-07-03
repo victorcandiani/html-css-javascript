@@ -12,14 +12,19 @@ function likepost () {
     
     next.click();
     console.log(`Voce curtiu ${counter} posts!`);
+    console.log (getRandomInt())
    
+}
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 (function loop () {
     setTimeout(() => {
     likepost();
     loop();
-    },5000);
+    }, getRandomInt(5000,15000));
 
 
 }());
