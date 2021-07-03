@@ -1,0 +1,28 @@
+* {
+  background-color: black;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  display: block;
+  font-size: 5em;
+  padding: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(253, 253, 253, 0.9);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,21 @@
+* {
+    background-color: black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a{
+    display: block;
+    font-size: 5em;
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba($color: #fdfdfd, $alpha: 0.9);
+}

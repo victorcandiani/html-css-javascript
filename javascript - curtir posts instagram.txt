@@ -1,0 +1,25 @@
+const next = document.querySelector('a.coreSpriteRightPaginationArrow');
+var counter = 0;
+
+function likepost () {
+    const botaoLike = document.querySelector('article > div.eo2As > section.ltpMr.Slqrh > span.fr66n > button');
+
+    if(botaoLike) {
+    console.log('click\n');
+    botaoLike.click();
+    counter++;
+    }
+    
+    next.click();
+    console.log(`Voce curtiu ${counter} posts!`);
+   
+}
+
+(function loop () {
+    setTimeout(() => {
+    likepost();
+    loop();
+    },5000);
+
+
+}());
