@@ -5,15 +5,13 @@ function likepost () {
     const botaoLike = document.querySelector('article > div.eo2As > section.ltpMr.Slqrh > span.fr66n > button');
 
     if(botaoLike) {
-    console.log('click\n');
     botaoLike.click();
     counter++;
+    console.log(`Voce curtiu ${counter} posts!`);
     }
     
     next.click();
-    console.log(`Voce curtiu ${counter} posts!`);
-    console.log (getRandomInt())
-   
+       
 }
 
 function getRandomInt(min, max) {
@@ -24,7 +22,7 @@ function getRandomInt(min, max) {
     setTimeout(() => {
     likepost();
     loop();
-    }, getRandomInt(5000,15000));
+    }, getRandomInt(5000, 15000));
 
 
 }());
