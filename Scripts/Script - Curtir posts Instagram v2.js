@@ -1,5 +1,7 @@
 let likes = 0;
 let intervaloTempo = 15000;
+const curtir = document.querySelector('article > div.eo2As > section.ltpMr.Slqrh > span.fr66n > button');
+const avancar = document.querySelector('a.coreSpriteRightPaginationArrow');
 
 function curtirClick() {
     intervaloTempo = 10000;
@@ -7,9 +9,6 @@ function curtirClick() {
     intervaloCurtir = Math.floor(Math.random() * 3000 + 2000);
     intervaloAvancar = Math.floor(Math.random() * 4000 + 5001);
     intervaloTotal = Math.floor(intervaloTempo + intervaloCurtir + intervaloAvancar)
-
-    const curtir = document.querySelector('svg[aria-label="Curtir"]').parentNode;
-    const avancar = document.querySelector('a.coreSpriteRightPaginationArrow');
     
     console.log(`Intervalo total = ${Math.round(intervaloTotal / 1000)}s`)
 
